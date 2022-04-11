@@ -29,7 +29,6 @@ public class Pogoda {
                 //System.out.println(str);
                 System.out.println("Температура: " + jsonObj.get("main" ));
 
-
             } catch (IOException  e) {
                 System.out.println("Город не найден. Введите корректно название.");
             }
