@@ -24,10 +24,9 @@ public class Pogoda {
                 InputStream input = url.openStream();
                 byte[] buffer = input.readAllBytes();
                 String str = new String(buffer);
-               //System.out.println(str);
-                JSONObject jsonObj = new JSONObject(str);
-                //System.out.println(str);
-                System.out.println("Температура: " + jsonObj.get("main" ));
+                //JSONObject jsonObj = new JSONObject(str);
+                //System.out.println("Температура: " + jsonObj.get("main" ));
+                System.out.println(str);
 
             } catch (IOException  e) {
                 System.out.println("Город не найден. Введите корректно название.");
